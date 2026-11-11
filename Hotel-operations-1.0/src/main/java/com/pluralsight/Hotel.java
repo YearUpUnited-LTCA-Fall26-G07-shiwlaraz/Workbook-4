@@ -1,8 +1,8 @@
 package com.pluralsight;
 
 public class Hotel {
-    private int numberOfSuites;
     private String name;
+    private int numberOfSuites;
     private int numberOfRooms;
     private int bookedSuites;
     private int bookedBasicRooms;
@@ -35,6 +35,10 @@ public class Hotel {
         this.bookedBasicRooms = bookedBasicRooms;
 
     }
+    public String getName() {
+        return name;
+    }
+
     public int getAvailableSuites() {
         return numberOfSuites - bookedSuites;
     }

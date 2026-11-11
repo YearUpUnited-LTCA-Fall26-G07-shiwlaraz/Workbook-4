@@ -81,6 +81,12 @@ public class Employee {
         }
     }
 
+    public void setStartTime(int startTime) {
+        this.startTime = startTime;
+    }
+    public int getStartTime() {
+        return startTime;
+    }
 
     public void punchIn (int time) {
         startTime = time;
