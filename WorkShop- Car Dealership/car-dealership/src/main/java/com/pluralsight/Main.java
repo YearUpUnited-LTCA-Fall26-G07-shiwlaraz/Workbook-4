@@ -7,8 +7,10 @@ public class Main {
     public static void main(String[] args) {
         Dealership dealership = new Dealership("Das Auto",
                 "34 Kent Road", "222-555-3345");
-        Vehicle car = new Vehicle(363663656, 2025, "Toyota", "Sportage",
-                "SUV", "Blue",60000, new BigDecimal("15000.00"));
+
+
+        Vehicle car = new Vehicle(363663656, 2025, "Toyota", "Sienna",
+                "SUV", "Blue",80000, new BigDecimal("16000.00"));
         Vehicle car1 = new Vehicle(456334376, 2019, "Kia", "Sportage",
                 "SUV", "Blue", 60000, new BigDecimal("15000.00"));
 
@@ -27,16 +29,26 @@ public class Main {
         Vehicle car6 = new Vehicle(634789215, 2018, "Honda", "Odyssey",
                 "Van", "Silver", 85000, new BigDecimal("17500.00"));
         dealership.addVehicle(car);
+        dealership.addVehicle(car1);
         dealership.addVehicle(car2);
         dealership.addVehicle(car3);
         dealership.addVehicle(car4);
         dealership.addVehicle(car5);
         dealership.addVehicle(car6);
 
+
         System.out.println("Dealers Name: " + dealership.getName());
         System.out.println("Dealers Address: " + dealership.getAddress());
         System.out.println("Dealers Phone No: " + dealership.getPhone());
 
+       dealership.getAllTheVehicles();
+//        dealership.getVehicleByPrice();
+//        dealership.getVehicleByMakeModel();
+//        dealership.getVehicleByYear();
+//        dealership.getVehicleByColor();
+//        dealership.getVehicleByMileage();
+//        dealership.getVehicleByType();
+        dealership.removeVehicle(car6);
         dealership.getAllTheVehicles();
 
 
