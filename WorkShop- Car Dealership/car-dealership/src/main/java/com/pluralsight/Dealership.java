@@ -1,9 +1,9 @@
 package com.pluralsight;
 
-import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.*;
+import java.util.List;
+
 
 public class Dealership {
     private String name;
@@ -33,6 +33,9 @@ public class Dealership {
     }
     public void removeVehicle(Vehicle vehicle) {
         inventory.remove(vehicle);
+    }
+    public List<Vehicle> getAllVehicles() {
+        return inventory;
     }
     public void getAllTheVehicles() {
         int size = inventory.size();
@@ -121,7 +124,5 @@ public class Dealership {
 
 
     }
-
-
 
 }
